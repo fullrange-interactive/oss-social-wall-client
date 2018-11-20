@@ -1,0 +1,11 @@
+
+<article id="content-{{:id}}" class="item {{if valid == false}}item-hidden{{/if}} {{if pinned == true}}item-pinned{{/if}} {{if selected == true}}item-selected{{/if}}">
+  <div class="content-inner">
+    <header>
+      <div class="byline">{{include tmpl="genericAuthor" /}}</div>
+    </header>
+    <div class="article-content">{{contentFormatter:text}}</div>
+    <div class="article-medias">{{include tmpl="mediaList" /}}</div>{{if pinned == true}}
+    <div class="pinned"><i class="fa fa-thumb-tack "> </i></div>{{/if}}
+  </div>
+</article>

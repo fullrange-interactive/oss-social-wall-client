@@ -1,0 +1,21 @@
+
+<div id="banner">
+  <div id="banner-inner">
+    <ul class="sources">{{for sources}}
+      <li class="{{:type}}"><span>
+          {{if type == "twitter"}}
+          {{if text}}<a href="https://twitter.com/hashtag/{{removeHash:parameters.hashtag}}">{{:text}}</a>{{else}}<a href="https://twitter.com/hashtag/{{removeHash:parameters.hashtag}}">{{:parameters.hashtag}}</a>{{/if}}
+          {{else type == "facebook"}}
+          {{if text}}<a href="{{:parameters.url}}">{{:text}}</a>{{else}}
+          {{facebookUrlFormatter:parameters.url}}
+          {{/if}}
+          {{else type == "instagram"}}
+          {{if text}}<a href="https://instagram.com/explore/tags/{{removeHash:parameters.hashtag}}">{{:text}}</a>{{else}}<a href="https://instagram.com/explore/tags/{{removeHash:parameters.hashtag}}">{{:parameters.hashtag}}</a>{{/if}}
+          {{/if}}</span><i class="fa fa-fw fa-{{:type}} source-icon-{{:type}}"></i></li>{{/for}}
+    </ul><img src="{{:displayParameters.logo}}" onerror="this.style.display='none'" class="logo"/>
+    <div class="title-and-description">
+      <h1><a href="{{:url}}">{{:name}}</a></h1>
+      <p class="description">{{contentFormatter:description}}</p>
+    </div>
+  </div>
+</div>

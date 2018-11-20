@@ -1,0 +1,35 @@
+{
+  "name": "social-wall-client",
+  "homepage": "https://github.com/floriansegginger/social-wall-client",
+  "authors": [
+    "Kevin <kevin@henzer.ch>"
+  ],
+  "description": "",
+  "main": "wall.html",
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.1",
+    "jquery": "^3.1.0",
+    "packery": "^2.1.1",
+    "jsrender": "^0.9.80",
+    "masonry": "^4.1.1",
+    "reset-css": "^2.0.2011012603",
+    "jss": "*",
+    "moment": "^2.15.1",
+    "moment-timezone": "^0.5.5",
+    "font-awesome": "^4.6.3",
+    "imagesloaded": "^4.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "r.js": "^2.3.1",
+    "livereload-js": "^2.2.1"
+  }
+}

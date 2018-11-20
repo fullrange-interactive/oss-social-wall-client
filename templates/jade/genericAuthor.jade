@@ -1,0 +1,25 @@
+address.author
+  div.source
+    {{if source.type == "twitter"}}
+    i(class="fa fa-twitter")
+    {{else source.type == "webapp"}}
+    i(class="fa fa-mobile")
+    {{else source.type == "facebook"}}
+    i(class="fa fa-facebook")
+    {{else source.type == "instagram"}}
+    i(class="fa fa-instagram")
+    {{else}}
+    i {{:source.type}}
+    {{/if}}
+
+  a.author_photo(style="background-image:url('{{:author.photo}}')",href="{{:author.url}}",target='_blank')
+    {{if author.photo == ""}}
+    i(class="fa fa-user")
+    {{/if}}  
+  
+  div(rel="author") {{:author.name}}
+  
+  time(datetime="{{:date}}")
+    {{:stringDate}}
+
+  

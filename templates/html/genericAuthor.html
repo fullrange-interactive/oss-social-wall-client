@@ -1,0 +1,6 @@
+
+<address class="author">
+  <div class="source">{{if source.type == "twitter"}}<i class="fa fa-twitter"></i>{{else source.type == "webapp"}}<i class="fa fa-mobile"></i>{{else source.type == "facebook"}}<i class="fa fa-facebook"></i>{{else source.type == "instagram"}}<i class="fa fa-instagram"></i>{{else}}<i>{{:source.type}}</i>{{/if}}</div><a style="background-image:url('{{:author.photo}}')" href="{{:author.url}}" target="_blank" class="author_photo">{{if author.photo == ""}}<i class="fa fa-user"></i>{{/if}}  </a>
+  <div rel="author">{{:author.name}}</div>
+  <time datetime="{{:date}}">{{:stringDate}}</time>
+</address>

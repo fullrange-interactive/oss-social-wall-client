@@ -1,0 +1,36 @@
+{
+  "name": "social-wall-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "bower-requirejs": "^1.2.0",
+    "grunt": "^1.0.1",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-files-to-javascript-variables": "^0.2.4",
+    "jade": "^1.11.0",
+    "yo": "^1.8.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floriansegginger/social-wall-client.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/floriansegginger/social-wall-client/issues"
+  },
+  "homepage": "https://github.com/floriansegginger/social-wall-client#readme"
+}

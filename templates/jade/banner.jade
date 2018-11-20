@@ -1,0 +1,34 @@
+#banner
+    div#banner-inner
+        ul.sources
+            {{for sources}}
+            li(class="{{:type}}")
+                span
+                    {{if type == "twitter"}}
+                    {{if text}}
+                    a(href="https://twitter.com/hashtag/{{removeHash:parameters.hashtag}}")= "{{:text}}"
+                    {{else}}
+                    a(href="https://twitter.com/hashtag/{{removeHash:parameters.hashtag}}")= "{{:parameters.hashtag}}"
+                    {{/if}}
+                    {{else type == "facebook"}}
+                    {{if text}}
+                    a(href="{{:parameters.url}}")= "{{:text}}"
+                    {{else}}
+                    {{facebookUrlFormatter:parameters.url}}
+                    {{/if}}
+                    {{else type == "instagram"}}
+                    {{if text}}
+                    a(href="https://instagram.com/explore/tags/{{removeHash:parameters.hashtag}}")= "{{:text}}"
+                    {{else}}
+                    a(href="https://instagram.com/explore/tags/{{removeHash:parameters.hashtag}}")= "{{:parameters.hashtag}}"
+                    {{/if}}
+                    {{/if}}
+                i(class="fa fa-fw fa-{{:type}} source-icon-{{:type}}")
+            {{/for}}
+        img.logo(src="{{:displayParameters.logo}}",onerror="this.style.display='none'")
+        .title-and-description
+            h1
+                a(href="{{:url}}")
+                    {{:name}}
+            p.description
+                {{contentFormatter:description}}
